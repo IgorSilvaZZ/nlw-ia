@@ -1,15 +1,16 @@
 import fastify from "fastify";
 
-const app = fastify();
+import { getAllPromptsRoute } from "./routes/get-all-prompts";
+import { uploadVideoRoute } from "./routes/upload-video";
 
-app.get("/", () => {
-  return "Hello World";
-});
+const app = fastify();
+app.register(getAllPromptsRoute);
+app.register(uploadVideoRoute);
 
 app
   .listen({
     port: 3333,
   })
   .then(() => {
-    console.log("HTTP Server Running!");
+    console.log("Server is running 🚀!");
   });
