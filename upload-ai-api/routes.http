@@ -17,3 +17,13 @@ Content-Type: audio/mpeg
 
 < ./example.mp3
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+# @name create-transcription
+POST http://localhost:3333/videos/a05e61cd-9297-4db1-99eb-82d97c80a54c/transcription
+Content-Type:  application/json
+
+{
+    "prompt": "tailwind, prettier, eslint, code beautiful"
+}
