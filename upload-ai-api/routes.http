@@ -27,3 +27,15 @@ Content-Type:  application/json
 {
     "prompt": "tailwind, prettier, eslint, code beautiful"
 }
+
+###
+
+# @name generate-ai-complete
+POST http://localhost:3333/ai/complete
+Content-Type:  application/json
+
+{
+    "videoId": "a05e61cd-9297-4db1-99eb-82d97c80a54c",
+    "temperature": 0.5,
+    "template": "Gere um resumo sucinto da transcrição do video informado  a seguir: '''{transcription}'''"
+}
