@@ -1,8 +1,8 @@
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 
-import coreURL from "../ffmpegffmpeg-core.js?url";
-import wasmURL from "../ffmpegffmpeg-core.wasm?url";
-import workerURL from "../ffmpegffmpeg-worker.js?url";
+import coreURL from "../ffmpeg/ffmpeg-core.js?url";
+import wasmURL from "../ffmpeg/ffmpeg-core.wasm?url";
+import workerURL from "../ffmpeg/ffmpeg-worker.js?url";
 
 let ffmpeg: FFmpeg | null;
 
